@@ -1,0 +1,138 @@
+.col-12{
+    position: relative;
+    width: 100vh;
+    height: 60vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#h4_log{
+    position: absolute;
+    margin-top: -45vh;
+    color: rgb(16, 159, 11);
+}
+
+/*Estiliza o label do formulario*/
+.form-group{
+    margin-top: 6vh;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(16, 159, 11);   
+}
+
+/*Estiliza o fundo do formulario*/
+.d_form{
+    position: relative;
+    margin-top: 2.5vh;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: solid 1px rgb(16, 159, 11);
+}
+
+/*Estiliza o input do formulario*/
+.estilo_dados_form{
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    background-clip: padding-box;
+    display: block;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color: rgb(16, 159, 11);
+    border: solid 2px rgb(16, 159, 11) ;
+    border-radius: 10px;
+    background-color: rgb(166, 246, 95);
+}
+
+/*Div de fundo do formulario*/
+#frmLogin{
+    position: relative;
+    height: 40vh;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.btn {
+    width: 14vh;
+    height: 8vh;
+    margin-top: 3vh;
+    cursor: pointer;
+    outline: none;
+    transition: 1s ease-in-out;
+    background: transparent;
+    border: 1px solid rgb(16, 159, 11);
+}
+
+#btn_logar:hover {transition: 1s ease-in-out;}
+
+#btn_logar:hover svg {stroke-dashoffset: -480;}
+
+#btn_logar span {
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(16, 159, 11);
+}
+
+#btn_voltar:hover {
+    transition: 1s ease-in-out;
+    background: rgb(166, 246, 95);
+}
+
+#btn_voltar:hover svg {stroke-dashoffset: -480;}
+
+#btn_voltar span {
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(16, 159, 11);
+}
+
+.btn-primary{text-align: center;}
+
+#link-a{
+    width: 100vh;
+    height: 100vh;
+}
+
+/*-----responsividades do login-----*/
+
+/*Responsividade formulario*/
+
+/*Responsividade da Largura*/
+
+@media only screen and (max-width: 440px) {
+    .d_form{
+        width: 45vh;
+        height: 60vh;}
+    .form-group{width: 280px;}}
+
+@media only screen and (min-width: 440px) {
+    .d_form{
+        width: 50vh;
+        height: 60vh;}
+    .form-group{width: 300px;}}
+
+@media only screen and (min-width: 440px) {
+    .d_form{
+        width: 50vh;
+        height: 60vh;}
+    .form-group{width: 300px;}}
+
+@media only screen and (min-width: 480px) {
+    .d_form{
+        width: 60vh;
+        height: 60vh;}
+    .form-group{width: 330px;}}
+
+@media only screen and (min-width: 580px) {
+    .d_form{
+        width: 60vh;
+        height: 60vh;}
+    .form-group{width: 330px;}}
